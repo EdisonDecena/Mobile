@@ -7,7 +7,7 @@ import ProductScreen from '../screens/ProductScreen';
 import { themeColors } from '../theme';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import {HomeIcon as HomeOutline, HeartIcon as HeartOutline, ShoppingBagIcon as BagOutline } from 'react-native-heroicons/outline';
+import {HomeIcon as HomeOutline, HeartIcon as HeartOutline, ShoppingBagIcon as BagOutline, UserCircleIcon } from 'react-native-heroicons/outline';
 import {HomeIcon as HomeSolid, HeartIcon as HeartSolid, ShoppingBagIcon as BagSolid} from 'react-native-heroicons/solid';
 
 
@@ -69,9 +69,9 @@ const menuIcons = (route, focused)=> {
   if (route.name === 'home') {
     icon =  focused? <HomeSolid size="30" color={themeColors.bgLight} /> : <HomeOutline size="30" strokeWidth={2} color="white" />
   } else if (route.name === 'favourite') {
-    icon =  focused? <HeartSolid size="30" color={themeColors.bgLight} /> : <HeartOutline size="30" strokeWidth={2} color="white" />
+    icon =  focused? <BagSolid size="30" color={themeColors.bgLight} /> : <BagSolid size="30" strokeWidth={2} color="white" />
   }else if(route.name==='cart'){
-    icon =  focused? <BagSolid size="30" color={themeColors.bgLight} /> : <BagOutline size="30" strokeWidth={2} color="white" />
+    icon =  focused? <UserCircleIcon size="30" color={themeColors.bgLight} /> : <UserCircleIcon size="30" strokeWidth={2} color="white" />
   }
 
   
