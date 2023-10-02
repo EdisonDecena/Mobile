@@ -82,7 +82,7 @@ export default function FavouriteScreen(props) {
         </View>
 
         <View className="px-4 space-y-2">
-          <Text style={{color: themeColors.text}} className="text-lg font-bold">About</Text>
+          <Text style={{color: themeColors.text}} className="text-lg font-bold">Benefits</Text>
           <Text className="text-gray-600">
             {item.desc}
           </Text>
@@ -117,6 +117,7 @@ export default function FavouriteScreen(props) {
               <ShoppingBag size="30" color="gray" />
             </TouchableOpacity>
             <TouchableOpacity 
+              onPress={()=> navigation.navigate('Cart')} 
               style={{backgroundColor: themeColors.bgLight}} 
               className="p-4 rounded-full flex-1 ml-4">
               <Text className="text-center text-white text-base font-semibold">Checkout Now</Text>

@@ -5,14 +5,16 @@ import {themeColors} from '../theme';
 import { StatusBar } from 'expo-status-bar';
 import { categories, coffeeItems } from '../constants';
 import Carousel from 'react-native-snap-carousel';
-import { BellIcon, MagnifyingGlassIcon } from 'react-native-heroicons/outline'
+import { BellIcon, MagnifyingGlassIcon, ShoppingCartIcon } from 'react-native-heroicons/outline'
 import { MapPinIcon } from 'react-native-heroicons/solid'
 import FruitCard from '../components/fruitCard';
+import { useNavigation } from '@react-navigation/native'; // Import useNavigation
 
 const {width, height} = Dimensions.get('window');
 const ios = Platform.OS == 'ios';
 export default function HomeScreen() {
   const [activeCategory, setActiveCategory] = useState(1);
+  const navigation = useNavigation();
 
   return (
     <View className="flex-1 relative bg-white">
@@ -23,19 +25,19 @@ export default function HomeScreen() {
         style={{height: height*0.2}} 
         className="w-full absolute -top-5 opacity-10" />
       <SafeAreaView className={ios? '-mb-8': ''}>
-        {/* avatar and bell icon */}
+        {/* Logo, Shopping Cart */}
         <View className="mx-4 flex-row justify-between items-center">
           <Image source={require('../assets/images/logo.png')} 
-            className="h-9 w-9 rounded-full" />
+            className="h-[70px] w-[80px] " />
           
-          <View className="flex-row items-center space-x-2">
-            <MapPinIcon size="25" color={themeColors.bgLight} />
+          <View className="flex-row items-center space-x-1">
+            <MapPinIcon size="40" color={themeColors.bgLight} />
             <Text className="font-semibold text-base">
               Dagupan
             </Text>
           </View>
-          <TouchableOpacity> 
-          <BellIcon size="27" color="black" />
+          <TouchableOpacity onPress={()=> navigation.navigate('Cart')}>
+          <ShoppingCartIcon size="40" color="black" />
           </TouchableOpacity>
         </View>
         {/* search bar */}
