@@ -11,7 +11,7 @@ const {width, height} = Dimensions.get('window');
 const ios = Platform.OS == 'ios';
 
 
-export default function FavouriteScreen(props) {
+export default function ProductScreen(props) {
   const item = props.route.params;
   const [size, setSize] = useState('small');
   const navigation = useNavigation();
@@ -113,16 +113,14 @@ export default function FavouriteScreen(props) {
           </View>
           {/* buy now button */}
           <View className="flex-row justify-between px-4">
-            <TouchableOpacity className="p-4 rounded-full border border-gray-400">
-              <ShoppingBag size="30" color="gray" />
+          <TouchableOpacity 
+           style={{ backgroundColor: themeColors.bgLight }} 
+            className="p-4 rounded-full flex-1 ml-4">
+              <Text className="text-center text-white text-base font-semibold">Buy Now</Text>
             </TouchableOpacity>
-            <TouchableOpacity 
-              onPress={()=> navigation.navigate('Cart')} 
-              style={{backgroundColor: themeColors.bgLight}} 
-              className="p-4 rounded-full flex-1 ml-4">
-              <Text className="text-center text-white text-base font-semibold">Checkout Now</Text>
-            </TouchableOpacity>
-          </View>
+
+
+            </View>
         </View>
         
       

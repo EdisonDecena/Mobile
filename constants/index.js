@@ -70,6 +70,70 @@ export const coffeeItems = [
     stars: '4.7',
     image: require('../assets/images/GreenJuice.png'),
     desc: 'Green apples are packed with antioxidants, including vitamin C, which help combat oxidative stress and reduce the risk of chronic diseases by neutralizing harmful free radicals.'  },
+
+    {
+      id: 5,
+      name: 'Green Apple',
+      price: '150',
+      volume: '120 ml',
+      stars: '4.7',
+      image: require('../assets/images/GreenJuice.png'),
+      desc: 'Green apples are packed with antioxidants, including vitamin C, which help combat oxidative stress and reduce the risk of chronic diseases by neutralizing harmful free radicals.'  },
+    
+
+      {
+        id: 6,
+        name: 'Broccoli Juice',
+        price: '150',
+        volume: '120 ml',
+        stars: '4.7',
+        image: require('../assets/images/GreenJuice.png'),
+        desc: 'Green apples are packed with antioxidants, including vitamin C, which help combat oxidative stress and reduce the risk of chronic diseases by neutralizing harmful free radicals.'  },
+      
+
+        {
+          id: 7,
+          name: 'Carrot Shake',
+          price: '150',
+          volume: '120 ml',
+          stars: '4.7',
+          image: require('../assets/images/GreenJuice.png'),
+          desc: 'Green apples are packed with antioxidants, including vitamin C, which help combat oxidative stress and reduce the risk of chronic diseases by neutralizing harmful free radicals.'  },
+
+          {
+            id: 8,
+            name: 'Pear Shake',
+            price: '150',
+            volume: '120 ml',
+            stars: '4.7',
+            image: require('../assets/images/GreenJuice.png'),
+            desc: 'Green apples are packed with antioxidants, including vitamin C, which help combat oxidative stress and reduce the risk of chronic diseases by neutralizing harmful free radicals.'  },
+
+            {
+              id: 9,
+              name: 'Radish Juice',
+              price: '150',
+              volume: '120 ml',
+              stars: '4.7',
+              image: require('../assets/images/GreenJuice.png'),
+              desc: 'Green apples are packed with antioxidants, including vitamin C, which help combat oxidative stress and reduce the risk of chronic diseases by neutralizing harmful free radicals.'  },
+
+              {
+                id: 10,
+                name: 'Carrot Smoothie',
+                price: '150',
+                volume: '120 ml',
+                stars: '4.7',
+                image: require('../assets/images/GreenJuice.png'),
+                desc: 'Green apples are packed with antioxidants, including vitamin C, which help combat oxidative stress and reduce the risk of chronic diseases by neutralizing harmful free radicals.'  },
+              
+            
+            
+          
+          
+        
+        
+      
   
 
 ]
